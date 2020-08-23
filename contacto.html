@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase 10a - tarea bootstrap material js</title>
+	<link rel="stylesheet" href="css/estilosCSS.css"/> <!-- Link a mi css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/><!-- Para garantizar una representación adecuada y un zoom táctil para todos los dispositivos, no olvidar agregar el viewport -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Debe estar en la carpeta css cuando descargamos el bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/><!-- animaciones -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"><!-- tipografias 1 -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!-- tipografías 2 -->
+</head>
+<body>
+	<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+         <!-- Brand -->
+          <a class="navbar-brand"  id="colorMenu" a href="index.html">BOTÁNICA STUDIO</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link"  id="colorMenu" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  id="colorMenu" href="nosotros.html">QUIENES SOMOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  id="colorMenu" href="productos.html">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  id="colorMenu" href="blog.html">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  id="colorMenu" href="contacto.html">CONTACTANOS</a>
+        </li>
+      </ul>
+    </nav>
+	</header> <!-- /header -->
+<br>
+<section class="container-fluid">
+
+  	<!--Section contactanos-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive text-center my-4 section1texto"  id="estilospaceArriba">Contactanos</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Tenés alguna pregunta para hacernos? No dudes en contactarnos a través de este formulario. Nuestro team no dudará en ayudarte.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Ingresa tu nombre">
+                            <label for="name">Nombre* (requerido)</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="ejemplo@ejemplo.com">
+                            <label for="email" class="">Mail* (requerido)</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <fieldset>
+								Querés suscribirte a nuestro newsletter?
+							<div>
+								<input type="radio" name="decisión" value="si">
+									Claro que si
+								<input type="radio" name="decisión" value="no">
+									Mejor más adelante
+							</div>
+							</fieldset>
+							<br>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+
+                				<label for="seleccionaproducto">En qué producto estás interesado/a:</label>
+				<select name="productos">
+					<option name= "r">Club botánico</option>
+					<option name= "cb">Workshops</option>
+					<option name= "l">Libros</option>
+					<option name= "l">Láminas</option>
+					<option name= "l">Otros</option>
+				</select>
+				<br>
+                </div>
+                </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+
+                                                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+
+                				<div><input type="checkbox" name="acepto" value="1">   Acepto términos y condiciones</div>
+                </div>
+                </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+            	<button type="button" id="buttonSection1" class="btn">Enviar</button>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+    </div>
+
+</section>
+<!--Fin sección contactanos-->
+
+
+  <footer class="footerPadre">
+    <div class="footerHijo1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26297.08640363214!2d-58.490524529544096!3d-34.52478724321706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6a6386ba5c9%3A0xb8039ed75861da4d!2sVicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1595012831845!5m2!1ses!2sar" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="footerHijo2">
+      <h3 id="estiloh3">Nuestros datos</h3>
+        <p><img width="25" height="20" src="media/footer-mail.png" alt="mail" align="left"> <a href="mailto:hola@botanicastudio.com"> hola@botanicastudio.com</a></p>
+        <p><img width="25" height="20" src="media/footer-whatsapp.png" alt="whatsapp" align="left"> <a href="https://wa.me/5491159888386?text=Me%20interesa%20las%20laminas%20que%20estás%20vendiendo">+54 9 115 9888386</a></p>
+        <p><img width="25" height="20" src="media/footer-adress.png" alt="adress" align="left">Av. Maipú 1420, Olivos, GBA</p>
+    </div>
+    <div class="footerHijo3">
+      <h3 id="estiloh3">Newsletter</h3>
+        <p>Acá iría a futuro el botón para suscribirse al newsletter. Asi que vamos a dejar este espacio para luego suscribirse</p>
+    </div>
+  </footer>
+
+</section>
+	 <!-- Esto sirve para que funcione bootstrap y material -->
+	<script src="js/jquery.js"></script><!-- Este lo bajo de jquery.com y elijo la opción Download the compressed, production jQuery 3.5.1 -->
+	<script src="js/bootstrap.bundle.min.js"></script> <!-- Están en la carpeta js que viene con bootstrap -->
+	<script src="js/bootstrap.min.js"></script> <!-- Están en la carpeta js que viene con bootstrap -->
+	<script src="js/material.min.js"></script>
+</body>
+</html>
